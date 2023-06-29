@@ -76,13 +76,8 @@
     height: 40px;
     display: flex;
     align-items: center;
+
   }
 }
-
-// svg {
-//     border: 1px solid red;  //$grey-2
-//     border-radius: 50%;
-//     // padding: 10px;  // при изменении паддингов svg ументшается и пропадает
-// }
 
 </style>

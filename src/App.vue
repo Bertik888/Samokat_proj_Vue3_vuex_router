@@ -39,8 +39,86 @@
         bg-color="bg-grey"
         :disabled="true"
       />
-
     </div>
+
+    <div class="wrapper">
+      <icon-basket 
+        size="200"
+        color="#6F73EE"
+        :active="true"
+      />
+      <icon-basket 
+        size="200"
+        color="#6F73EE"
+        :active="false"
+      />
+      <icon-heart
+        size="200"
+        color="#EE685F"
+        :active="true"
+      />
+      <icon-heart
+        size="200"
+        color="#EE685F"
+        :active="false"
+      />
+      <icon-compare
+        size="200"
+        color="#6F73EE"
+        :active="true"
+      />
+      <icon-compare       
+        size="200"
+        color="#6F73EE"
+        :active="false"
+      />
+    </div>
+
+    <div class="wrapper">
+      <ui-icon-action 
+        color="#6F73EE"
+        type="favorite"
+        :active="true" 
+      />
+      <ui-icon-action 
+        color="#6F73EE"
+        type="favorite"
+        :active="false"
+      />
+      <ui-icon-action 
+        color="#6F73EE"
+        type="favorite"
+        :active="false"
+        title="favorite"
+      />
+      <ui-icon-action 
+        color="#6F73EE"
+        type="cart"
+        :active="true"
+      />
+      <ui-icon-action 
+        color="#6F73EE"
+        type="cart"
+        :active="false"
+      />
+      <ui-icon-action 
+        color="#6F73EE"
+        type="compare"
+        :active="true"
+      />
+      <ui-icon-action 
+        color="#6F73EE"
+        type="compare"
+        :active="false"
+        :is-border="false"
+      />
+      
+    </div>
+
+
+
+
+
 
     <div class="wrapper">
       <ui-icon-cart />
@@ -107,6 +185,14 @@ import UiIconCompare from '@/components/Ui/UiIconCompare.vue'
 import UiBadge from '@/components/Ui/UiBadge.vue'
 import UiSkill from '@/components/Ui/UiSkill.vue'
 import UiMenuTop from '@/components/Ui/UiMenuTop.vue'
+import IconBasket from '@/components/Ui/icons/IconBasket.vue'
+import IconHeart from '@/components/Ui/icons/IconHeart.vue'
+import IconCompare from '@/components/Ui/icons/IconCompare.vue'
+import UiIconAction from '@/components/Ui/UiIconAction.vue'
+
+
+
+
 
 
 
@@ -122,7 +208,11 @@ export default {
     UiIconCompare,
     UiBadge,
     UiSkill,
-    UiMenuTop
+    UiMenuTop,
+    IconBasket,
+    IconHeart,
+    IconCompare,
+    UiIconAction
   },
 
   methods: {
@@ -181,7 +271,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: black;
+  color: $black-1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

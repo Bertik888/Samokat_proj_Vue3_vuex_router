@@ -29,6 +29,9 @@
 <style lang="scss" scoped>
 .ui-badge {
   padding: 5px; //верно ли задан класс сверху? + вопрос по ширине?
+  display: inline-block;
+  font-weight: 600;
+  color: white;
 }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="ui-icon-cart">
-    <!-- <div class="ui-icon-cart__svg"> -->
+    <div class="ui-icon-cart__svg">
         <!-- v-if="active" -->
       <svg 
         
@@ -23,11 +23,11 @@
         </clipPath>
         </defs>
       </svg>
-    <!-- </div> -->
+    </div>
 
     
     
-    <!-- <div class="ui-icon-cart__svg"> -->
+    <div class="ui-icon-cart__svg">
         <!-- v-else -->
       <svg 
 
@@ -49,7 +49,7 @@
         </clipPath>
         </defs>
       </svg>
-    <!-- </div> -->
+    </div>
     
 
 
@@ -68,17 +68,21 @@
 
 .ui-icon-cart {
 
-  // &__svg {
-  //   border: 1px solid $grey-2;
-  //   border-radius: 50%;
-  //   padding: 10px;
-  // }
+  &__svg {
+    border: 1px solid $grey-2;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
 }
 
-svg {
-    border: 1px solid red;  //$grey-2
-    border-radius: 50%;
-    // padding: 10px;  // при изменении паддингов svg ументшается и пропадает
-}
+// svg {
+//     border: 1px solid red;  //$grey-2
+//     border-radius: 50%;
+//     // padding: 10px;  // при изменении паддингов svg ументшается и пропадает
+// }
 
 </style>

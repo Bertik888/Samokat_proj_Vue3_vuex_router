@@ -3,31 +3,27 @@
     class="ui-icon-action"
     :class="{ _border: isBorder }"
   >
-
-  <icon-basket 
-    v-if="type === 'cart'"
-    :color="color"
-    :active="active"
-  />
-  <icon-heart 
-    v-else-if="type === 'favorite'"
-    :color="color"
-    :active="active"
-  />
-  <icon-compare 
-    v-else
-    :color="color"
-    :active="active"
-  />
-
-  <span 
-    v-if="title"
-    class="ui-icon-action__title"
-  >
-    {{ title }}
-  </span>
-  
-
+    <icon-basket 
+      v-if="type === 'cart'"
+      :color="color"
+      :active="active"
+    />
+    <icon-heart 
+      v-else-if="type === 'favorite'"
+      :color="color"
+      :active="active"
+    />
+    <icon-compare 
+      v-else
+      :color="color"
+      :active="active"
+    />
+    <span 
+      v-if="title"
+      class="ui-icon-action__title"
+    >
+      {{ title }}
+    </span>
   </div>
 </template>
 
@@ -85,8 +81,7 @@ import IconCompare from '@/components/Ui/icons/IconCompare.vue'
   &:hover {
     background-color: $grey-1;
     border-color: $grey-1 !important;
-  }
-  
+  }  
   &._border {
     border-color: $grey-2;
   }
@@ -98,5 +93,4 @@ import IconCompare from '@/components/Ui/icons/IconCompare.vue'
     line-height: 1;
   }
 }
-
 </style>

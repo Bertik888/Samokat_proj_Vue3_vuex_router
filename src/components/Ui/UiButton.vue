@@ -3,9 +3,7 @@
     class="ui-btn"
     :class="[`_${size}`, bgColor, textColor, { '_active': active }]"
     :disabled="disabled"
-    @click="!active && $emit('click')"
-    
-  
+    @click="!active && $emit('onClick')" 
   >
     {{ title }}
 
@@ -76,15 +74,12 @@
   cursor: pointer;
 
   margin-bottom: 30px; // потом удалить
-
   &._sm {
     padding: 10px 20px;
   }
-
   &._md {
     padding: 15px 25px;
   }
-
   &._active {
     background: transparent;
     border: 2px solid $purple !important;
@@ -92,7 +87,7 @@
     cursor: default;
   }
 
-  &::before {                                   // для чего?
+  &::before {                                  
     content: '';
     position: absolute;
     height: 100%;

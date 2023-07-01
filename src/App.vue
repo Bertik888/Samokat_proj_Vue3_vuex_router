@@ -1,11 +1,12 @@
 <template>
   <div class="container">
     <div class="wrapper">
+
+      <!-- Button-->
       <ui-button 
         title="Оформить заказ"
         bg-color="bg-purple"
-        @click="onClick"
-        
+        @onClick="onClick"        
       />
 
       <ui-button 
@@ -28,18 +29,21 @@
       />
 
       <ui-button 
-        title="Test"
+        title="Оформить заказ"
         bg-color="bg-grey"
         :disabled="true"
       />
 
       <ui-button 
-        title="Testik"
+        title="Оформить заказ"
         size="md"
         bg-color="bg-grey"
         :disabled="true"
       />
     </div>
+
+
+    <!-- Icon -->
 
     <div class="wrapper">
       <icon-basket 
@@ -73,6 +77,8 @@
         :active="false"
       />
     </div>
+
+    <!-- Icon-action -->
 
     <div class="wrapper">
       <ui-icon-action 
@@ -111,16 +117,11 @@
         type="compare"
         :active="false"
         :is-border="false"
-      />
-      
+      />      
     </div>
 
 
-
-
-
-
-    <div class="wrapper">
+    <!-- <div class="wrapper"> //удалить, если не нужны более, также удалить их из компонентов
       <ui-icon-cart />
     </div>
 
@@ -130,19 +131,29 @@
 
     <div class="wrapper">
       <ui-icon-compare />
-    </div>
+    </div> -->
+
+
+    <!-- Badge -->
 
     <div class="wrapper">
       <ui-badge 
         title="ХИТ"
         bg-color="bg-red"      
+        :style="{ textTransform: 'uppercase' }"  
       />
+      <!-- ВЕРНО ЛИ написал СТАЙЛ? и в целом верное ли это решение ?? -->
+    </div>
 
+    <div class="wrapper">
       <ui-badge 
         title="Новинка"
-        bg-color="bg-green"      
+        bg-color="bg-green"     
       />
     </div>
+
+
+    <!-- Skill -->
 
     <div class="wrapper">
       <ui-skill
@@ -164,6 +175,18 @@
         subtitle="и бонусы к покупкам"      
       />
     </div>
+
+
+    <!-- Ui-counter -->
+    <div class="wrapper">
+      <ui-counter
+        v-model="counter"
+
+      />
+    </div>
+
+
+    <!-- Ui-menu -->
 
     <div class="wrapper">
       <ui-menu-top
@@ -189,11 +212,7 @@ import IconBasket from '@/components/Ui/icons/IconBasket.vue'
 import IconHeart from '@/components/Ui/icons/IconHeart.vue'
 import IconCompare from '@/components/Ui/icons/IconCompare.vue'
 import UiIconAction from '@/components/Ui/UiIconAction.vue'
-
-
-
-
-
+import UiCounter from '@/components/Ui/UiCounter.vue'
 
 
 
@@ -212,15 +231,23 @@ export default {
     IconBasket,
     IconHeart,
     IconCompare,
-    UiIconAction
+    UiIconAction,
+    UiCounter
+  },
+
+  data() {
+    return {
+      counter: 0
+    }
   },
 
   methods: {
     onClick(data) {
-      this.counter++
-
-      console.log(data)
+      this.counter++ 
+      console.log(data) 
     }
+     
+    
   }
 }
 </script>

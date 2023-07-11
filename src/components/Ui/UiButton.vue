@@ -48,7 +48,7 @@
 
 .ui-btn {
   position: relative;
-  width: 100%;
+  // width: 100%;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -89,7 +89,7 @@
   }
 }
 
-button:disabled,                          // для разных браузеров
+button:disabled,                          // для разных браузеров full -width сделать класс
 button[disabled] {
   background-color: $grey-2 !important;
   color: #FFFFFF !important;

@@ -68,13 +68,6 @@
   li {
     cursor: pointer;
   }
-
-  // li:hover > &__sub {
-  //   visibility: visible;
-  //   opacity: 1;
-  //   transform: rotateX(0deg);
-  // }
-  
 }
 
 

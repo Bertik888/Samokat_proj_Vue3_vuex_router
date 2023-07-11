@@ -6,15 +6,13 @@
     @click="!active && $emit('onClick')" 
   >
     {{ title }}
-
   </button>
 </template>
 
 <script>
 
   export default {
-    name: 'UiButton',
-    
+    name: 'UiButton',    
     props: {
       title: {
         type: String,
@@ -41,17 +39,7 @@
         type: Boolean,
         default: false
       }
-    },
-
-    // methods: { 
-    //   click() {
-    //     if (!this.active) {
-    //       this.$emit('click')
-    //       // console.log(data)
-    //     }        
-    //   }
-    // }
-    
+    }    
   }
 </script>
 
@@ -72,8 +60,6 @@
   outline: none;
   box-shadow: none;
   cursor: pointer;
-
-  margin-bottom: 30px; // потом удалить
   &._sm {
     padding: 10px 20px;
   }
@@ -108,6 +94,4 @@ button[disabled] {
   background-color: $grey-2 !important;
   color: #FFFFFF !important;
 }
-
-
 </style>

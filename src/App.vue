@@ -138,11 +138,10 @@
 
     <div class="wrapper">
       <ui-badge 
-        title="ХИТ"
+        title="хит"
         bg-color="bg-red"      
         :style="{ textTransform: 'uppercase' }"  
       />
-      <!-- ВЕРНО ЛИ написал СТАЙЛ? и в целом верное ли это решение ?? -->
     </div>
 
     <div class="wrapper">

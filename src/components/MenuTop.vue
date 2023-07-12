@@ -29,17 +29,18 @@
 .menu-top {
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
 
-    &__item {
-      font-weight: 600;
-      font-size: 14px;
-      text-decoration: none;  
-      color: $black-1;
-    }
-    & .router-link-active {
+  &__item {
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;  
+    color: $black-1;
+    transition: color ease-out .2s;
+
+    &.router-link-active, 
+    &:hover {
       color: $purple;        
     }
+  }    
 }
 </style>

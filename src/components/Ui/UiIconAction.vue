@@ -75,7 +75,7 @@ import IconCompare from '@/components/Ui/icons/IconCompare.vue'
   padding: 9px;
   align-items: center;
   justify-content: center;
-  transition: background-color border-color ease-out .2s;
+  transition: background-color ease-out .2s, border-color ease-out .2s;
   cursor: pointer;
 
   &:hover {

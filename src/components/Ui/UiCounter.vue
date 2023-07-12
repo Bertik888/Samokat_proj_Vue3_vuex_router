@@ -46,6 +46,7 @@
   padding: 8px 12px;
   line-height: 22px;
   color: $black-1;
+  
 
   &__button {
     border: none;
@@ -55,11 +56,13 @@
     cursor: pointer;
     color: $grey;
     transition: all ease-out .2s;
-    line-height: 22px;
-    text-align: center;
     border-radius: 5px;
-    font-size: 22px;
     font-weight: 700;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       color: $purple;
@@ -72,8 +75,8 @@
 
   &__info {
     margin: 0 8px;
-    font-size: 22px;
     text-align: center;
+    min-width: 22px;
   }
 }
 

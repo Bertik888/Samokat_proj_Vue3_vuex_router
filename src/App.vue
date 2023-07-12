@@ -3,44 +3,41 @@
     <div class="wrapper">
 
       <!-- Button-->
-      <ui-button 
-        class="full-width"
-        title="Оформить заказ"
-        bg-color="bg-purple"
-        @onClick="onClick"        
-      />
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 30px;">
+          <ui-button 
+            class="full-width"
+            title="Оформить заказ"
+            bg-color="bg-purple"
+            @onClick="onClick"        
+          />
+        </div>
 
-      <ui-button 
-        title="Оформить заказ"
-        size="md"
-        bg-color="bg-orange"
-      />
+        <div class="col-12" style="margin-bottom: 30px;">
+          <ui-button 
+            title="Оформить заказ"
+            size="md"
+            bg-color="bg-orange"
+          />
+        </div>
 
-      <ui-button 
-        title="Оформить заказ"
-        bg-color="bg-purple-1"
-        :active="true"
-      />
+        <div class="col-12" style="margin-bottom: 30px;">
+          <ui-button 
+            title="Оформить заказ"
+            bg-color="bg-purple-1"
+            :active="true"
+          />
+        </div>
 
-      <ui-button 
-        title="Оформить заказ"
-        size="md"
-        bg-color="bg-purple-1"
-        :active="true"
-      />
+        <div class="col-12" style="margin-bottom: 30px;">
+          <ui-button 
+            title="Оформить заказ"
+            bg-color="bg-grey"
+            :disabled="true"
+          />
+        </div>
+      </div>
 
-      <ui-button 
-        title="Оформить заказ"
-        bg-color="bg-grey"
-        :disabled="true"
-      />
-
-      <ui-button 
-        title="Оформить заказ"
-        size="md"
-        bg-color="bg-grey"
-        :disabled="true"
-      />
     </div>
 
 
@@ -185,17 +182,9 @@
     </div>
 
 
-    <!-- Ui-menu -->
-
-    <div class="wrapper">
-      <ui-menu-top
-      />
-    </div>
-
-
     <!-- Menu-top -->
 
-    <div class="wrapper">
+    <div class="wrapper" style="margin-bottom: 30px;">
       <menu-top
         :items="menuTopList"
       />
@@ -206,7 +195,6 @@
   </div>
 </template>
 
-
 <script>
 import UiButton from '@/components/Ui/UiButton.vue'
 import UiIconCart from '@/components/Ui/UiIconCart.vue'
@@ -214,17 +202,12 @@ import UiIconFavorite from '@/components/Ui/UiIconFavorite.vue'
 import UiIconCompare from '@/components/Ui/UiIconCompare.vue'
 import UiBadge from '@/components/Ui/UiBadge.vue'
 import UiSkill from '@/components/Ui/UiSkill.vue'
-import UiMenuTop from '@/components/Ui/UiMenuTop.vue'
 import IconBasket from '@/components/Ui/icons/IconBasket.vue'
 import IconHeart from '@/components/Ui/icons/IconHeart.vue'
 import IconCompare from '@/components/Ui/icons/IconCompare.vue'
 import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import UiCounter from '@/components/Ui/UiCounter.vue'
 import MenuTop from '@/components/MenuTop.vue'
-
-
-
-
 
 export default {
   name: 'App',
@@ -236,7 +219,6 @@ export default {
     UiIconCompare,
     UiBadge,
     UiSkill,
-    UiMenuTop,
     IconBasket,
     IconHeart,
     IconCompare,
@@ -251,7 +233,7 @@ export default {
       menuTopList: [
         {
           title: 'О магазине',
-          route: '/home'
+          route: '/1'
         },
         {
           title: 'Доставка и оплата',
@@ -263,7 +245,7 @@ export default {
         },
         {
           title: 'Блог',
-          route: '/home'
+          route: '/'
         },
         {
           title: 'Контакты',

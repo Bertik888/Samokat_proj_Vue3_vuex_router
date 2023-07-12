@@ -48,14 +48,12 @@
 
 .ui-btn {
   position: relative;
-  // width: 100%;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
   line-height: 18px;
   border-radius: 5px;
   color: #FFFFFF;
-
   border: none;
   outline: none;
   box-shadow: none;
@@ -76,6 +74,8 @@
   &::before {                                  
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background-color: #FFFFFF;
@@ -84,14 +84,15 @@
     z-index: 1;
   }
 
-  &:hover {
+  &:hover:not(._active, button[disabled])::before  {
     opacity: 0.2;
   }
 }
 
-button:disabled,                          // для разных браузеров full -width сделать класс
+button:disabled,
 button[disabled] {
   background-color: $grey-2 !important;
   color: #FFFFFF !important;
+  cursor: default;
 }
 </style>

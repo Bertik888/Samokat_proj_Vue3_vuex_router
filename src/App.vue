@@ -4,6 +4,7 @@
 
       <!-- Button-->
       <ui-button 
+        class="full-width"
         title="Оформить заказ"
         bg-color="bg-purple"
         @onClick="onClick"        
@@ -180,7 +181,6 @@
     <div class="wrapper">
       <ui-counter
         v-model="counter"
-
       />
     </div>
 
@@ -189,7 +189,15 @@
 
     <div class="wrapper">
       <ui-menu-top
+      />
+    </div>
 
+
+    <!-- Menu-top -->
+
+    <div class="wrapper">
+      <menu-top
+        :items="menuTopList"
       />
     </div>
 
@@ -212,6 +220,8 @@ import IconHeart from '@/components/Ui/icons/IconHeart.vue'
 import IconCompare from '@/components/Ui/icons/IconCompare.vue'
 import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import UiCounter from '@/components/Ui/UiCounter.vue'
+import MenuTop from '@/components/MenuTop.vue'
+
 
 
 
@@ -231,12 +241,39 @@ export default {
     IconHeart,
     IconCompare,
     UiIconAction,
-    UiCounter
+    UiCounter,
+    MenuTop
   },
 
   data() {
     return {
-      counter: 0
+      counter: 0,
+      menuTopList: [
+        {
+          title: 'О магазине',
+          route: '/home'
+        },
+        {
+          title: 'Доставка и оплата',
+          route: '/home'
+        },
+        {
+          title: 'Тест-драйв',
+          route: '/home'
+        },
+        {
+          title: 'Блог',
+          route: '/home'
+        },
+        {
+          title: 'Контакты',
+          route: '/home'
+        },
+        {
+          title: 'Акции',
+          route: '/home'
+        }
+      ]
     }
   },
 
@@ -300,16 +337,6 @@ body {
   color: $black-1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-  // width: 100%;
-  // max-width: 1275px;
-
-  // padding-right: 165px;
-  // padding-left: 165px;  
-  // margin-right: auto;
-  // margin-left: auto;
 }
 
 .cursor-pointer {

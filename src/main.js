@@ -4,5 +4,7 @@ import router from './router'
 import store from './store'
 
 import '@/assets/css/color.scss'
+import '@/assets/css/general.scss'
+
 
 createApp(App).use(store).use(router).mount('#app')

@@ -119,24 +119,11 @@
     </div>
 
 
-    <!-- <div class="wrapper"> //удалить, если не нужны более, также удалить их из компонентов
-      <ui-icon-cart />
-    </div>
-
-    <div class="wrapper">
-      <ui-icon-favorite />
-    </div>
-
-    <div class="wrapper">
-      <ui-icon-compare />
-    </div> -->
-
-
     <!-- Badge -->
 
     <div class="wrapper">
       <ui-badge 
-        title="хит"
+        title="ХИТ"
         bg-color="bg-red"      
         :style="{ textTransform: 'uppercase' }"  
       />
@@ -182,6 +169,13 @@
     </div>
 
 
+    <!-- CardProduct -->
+    <div class="wrapper">
+      <card-product
+      />
+    </div>
+
+
     <!-- Menu-top -->
 
     <div class="wrapper" style="margin-bottom: 30px;">
@@ -197,9 +191,6 @@
 
 <script>
 import UiButton from '@/components/Ui/UiButton.vue'
-import UiIconCart from '@/components/Ui/UiIconCart.vue'
-import UiIconFavorite from '@/components/Ui/UiIconFavorite.vue'
-import UiIconCompare from '@/components/Ui/UiIconCompare.vue'
 import UiBadge from '@/components/Ui/UiBadge.vue'
 import UiSkill from '@/components/Ui/UiSkill.vue'
 import IconBasket from '@/components/Ui/icons/IconBasket.vue'
@@ -208,15 +199,14 @@ import IconCompare from '@/components/Ui/icons/IconCompare.vue'
 import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import UiCounter from '@/components/Ui/UiCounter.vue'
 import MenuTop from '@/components/MenuTop.vue'
+import CardProduct from '@/components/CardProduct.vue'
+
 
 export default {
   name: 'App',
 
   components: {
     UiButton,
-    UiIconCart,
-    UiIconFavorite,
-    UiIconCompare,
     UiBadge,
     UiSkill,
     IconBasket,
@@ -224,7 +214,8 @@ export default {
     IconCompare,
     UiIconAction,
     UiCounter,
-    MenuTop
+    MenuTop,
+    CardProduct
   },
 
   data() {

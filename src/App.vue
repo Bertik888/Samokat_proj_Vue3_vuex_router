@@ -171,8 +171,16 @@
 
     <!-- CardProduct -->
     <div class="wrapper">
-      <card-product
-      />
+      <div class="row">
+        <div 
+          v-for="item in products"
+          :key="item.id"
+          class="col-12 col-sm-6 col-lg-4">
+         <card-product 
+          :item="item"
+         />
+        </div>
+      </div>
     </div>
 
 
@@ -183,6 +191,22 @@
         :items="menuTopList"
       />
     </div>
+
+
+    <!-- Сборка-->
+    <div class="wrapper" style="margin-bottom: 30px;">
+      <div class="row">
+        <div class="col-12">
+          1
+          <menu-top />
+          
+          <img src="@/assets/images/headerbanner.jpg" alt="headerbanner">
+          
+          <ui-skill />
+        </div>        
+      </div>
+    </div>
+
 
     
 
@@ -245,6 +269,26 @@ export default {
         {
           title: 'Акции',
           route: '/home'
+        }
+      ],
+      products: [
+        {
+          name: 'Kugoo Kirin M4',
+          id: 1,
+          isHit: true,
+          isCompare: true,
+          price: 30000,
+          sale: 10,
+          stock: 1
+        },
+        {
+          name: 'Kugoo Kirin M4',
+          id: 2,
+          isHit: false,
+          isCompare: false,
+          price: 25000,
+          sale: 0,
+          stock: 0
         }
       ]
     }

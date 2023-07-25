@@ -3,18 +3,15 @@
     <div class="ui-skill__title">
       {{ title }}
     </div>
-
     <div class="ui-skill__subtitle">
       {{ subtitle }}
     </div>
-
   </div>
 </template>
 
 <script>
   export default {
     name: 'UiSkill',
-
     props: {
       title: {
         type: String,
@@ -40,5 +37,4 @@
     font-weight: 300;
   }
 }
-
 </style>

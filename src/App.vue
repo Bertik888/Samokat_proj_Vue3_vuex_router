@@ -119,24 +119,11 @@
     </div>
 
 
-    <!-- <div class="wrapper"> //удалить, если не нужны более, также удалить их из компонентов
-      <ui-icon-cart />
-    </div>
-
-    <div class="wrapper">
-      <ui-icon-favorite />
-    </div>
-
-    <div class="wrapper">
-      <ui-icon-compare />
-    </div> -->
-
-
     <!-- Badge -->
 
     <div class="wrapper">
       <ui-badge 
-        title="хит"
+        title="ХИТ"
         bg-color="bg-red"      
         :style="{ textTransform: 'uppercase' }"  
       />
@@ -182,6 +169,21 @@
     </div>
 
 
+    <!-- CardProduct -->
+    <div class="wrapper">
+      <div class="row">
+        <div 
+          v-for="item in products"
+          :key="item.id"
+          class="col-12 col-sm-6 col-lg-4">
+         <card-product 
+          :item="item"
+         />
+        </div>
+      </div>
+    </div>
+
+
     <!-- Menu-top -->
 
     <div class="wrapper" style="margin-bottom: 30px;">
@@ -190,6 +192,22 @@
       />
     </div>
 
+
+    <!-- Сборка-->
+    <div class="wrapper" style="margin-bottom: 30px;">
+      <div class="row">
+        <div class="col-12">
+          1
+          <menu-top />
+          
+          <img src="@/assets/images/headerbanner.jpg" alt="headerbanner">
+          
+          <ui-skill />
+        </div>        
+      </div>
+    </div>
+
+
     
 
   </div>
@@ -197,9 +215,6 @@
 
 <script>
 import UiButton from '@/components/Ui/UiButton.vue'
-import UiIconCart from '@/components/Ui/UiIconCart.vue'
-import UiIconFavorite from '@/components/Ui/UiIconFavorite.vue'
-import UiIconCompare from '@/components/Ui/UiIconCompare.vue'
 import UiBadge from '@/components/Ui/UiBadge.vue'
 import UiSkill from '@/components/Ui/UiSkill.vue'
 import IconBasket from '@/components/Ui/icons/IconBasket.vue'
@@ -208,15 +223,14 @@ import IconCompare from '@/components/Ui/icons/IconCompare.vue'
 import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import UiCounter from '@/components/Ui/UiCounter.vue'
 import MenuTop from '@/components/MenuTop.vue'
+import CardProduct from '@/components/CardProduct.vue'
+
 
 export default {
   name: 'App',
 
   components: {
     UiButton,
-    UiIconCart,
-    UiIconFavorite,
-    UiIconCompare,
     UiBadge,
     UiSkill,
     IconBasket,
@@ -224,7 +238,8 @@ export default {
     IconCompare,
     UiIconAction,
     UiCounter,
-    MenuTop
+    MenuTop,
+    CardProduct
   },
 
   data() {
@@ -254,6 +269,26 @@ export default {
         {
           title: 'Акции',
           route: '/home'
+        }
+      ],
+      products: [
+        {
+          name: 'Kugoo Kirin M4',
+          id: 1,
+          isHit: true,
+          isCompare: true,
+          price: 30000,
+          sale: 10,
+          stock: 1
+        },
+        {
+          name: 'Kugoo Kirin M4',
+          id: 2,
+          isHit: false,
+          isCompare: false,
+          price: 25000,
+          sale: 0,
+          stock: 0
         }
       ]
     }

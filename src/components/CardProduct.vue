@@ -1,15 +1,15 @@
 <template>
   <div class="card-product">
     <div class="card-product__top">
-        <ui-badge            
-          :title="item.isHit ? 'ХИТ' : 'Новинка'"
-          :bg-color="item.isHit ? 'bg-red' : 'bg-green'"          
-        />
-        <ui-icon-action style="margin-left: auto;"
-          type='compare'
-          color="#6F73EE"
-          :active="item.isCompare"
-        />
+      <ui-badge            
+        :title="item.isHit ? 'ХИТ' : 'Новинка'"
+        :bg-color="item.isHit ? 'bg-red' : 'bg-green'"          
+      />
+      <ui-icon-action style="margin-left: auto;"
+        type='compare'
+        color="#6F73EE"
+        :active="item.isCompare"
+      />
     </div>    
 
     <div class="card-product__image">

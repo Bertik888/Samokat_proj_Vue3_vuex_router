@@ -176,16 +176,15 @@
           v-for="item in products"
           :key="item.id"
           class="col-12 col-sm-6 col-lg-4">
-         <card-product 
-          :item="item"
-         />
+          <card-product 
+            :item="item"
+          />
         </div>
       </div>
     </div>
 
 
     <!-- Menu-top -->
-
     <div class="wrapper" style="margin-bottom: 30px;">
       <menu-top
         :items="menuTopList"
@@ -193,22 +192,19 @@
     </div>
 
 
-    <!-- Сборка-->
+    <!-- Banners -->
     <div class="wrapper" style="margin-bottom: 30px;">
       <div class="row">
         <div class="col-12">
-          1
-          <menu-top />
-          
-          <img src="@/assets/images/headerbanner.jpg" alt="headerbanner">
-          
-          <ui-skill />
-        </div>        
+          <banners   
+            title="Электросамокаты Kugoo Kirin от официального дилера" 
+            subtitle="с бесплатной доставкой по РФ от 1 дня"        
+
+          />
+        </div>
       </div>
-    </div>
-
-
-    
+      
+    </div>    
 
   </div>
 </template>
@@ -224,11 +220,11 @@ import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import UiCounter from '@/components/Ui/UiCounter.vue'
 import MenuTop from '@/components/MenuTop.vue'
 import CardProduct from '@/components/CardProduct.vue'
+import Banners from '@/components/Banners.vue'
 
 
 export default {
   name: 'App',
-
   components: {
     UiButton,
     UiBadge,
@@ -239,9 +235,9 @@ export default {
     UiIconAction,
     UiCounter,
     MenuTop,
-    CardProduct
+    CardProduct,
+    Banners
   },
-
   data() {
     return {
       counter: 0,
@@ -299,8 +295,6 @@ export default {
       this.counter++ 
       console.log(data) 
     }
-     
-    
   }
 }
 </script>
@@ -363,5 +357,4 @@ body {
 .wrapper {
   margin-top: 60px;
 }
-
 </style>

@@ -1,5 +1,67 @@
 <template>
-  <div class="container">
+  <div class="container-fluid mt-4 mb-4">
+    <ui-banner
+      bg="linear-gradient(19deg, #6F73EE 0%, rgba(111, 115, 238, 0.00) 100%)"
+      :bg-image="require('@/assets/images/banner_1.jpg')"
+      bg-size="cover"
+      :bg-image-up="false"
+    >
+    <div class="col-12 col-md-6">
+      <ui-badge       
+        title="Новинка"
+        bg-color="bg-green"
+        class="mb-4"        
+      />
+      <h2 class="mb-2">Электросамокаты Kugoo Kirin от официального дилера</h2>
+      <p class="mb-4">с бесплатной доставкой по РФ от 1 дня</p>
+      <ui-button      
+        title="Перейти в католог"
+        bg-color="bg-white"
+        text-color="color-purple"
+      />
+    </div>
+    </ui-banner>  
+  </div>
+
+  <div class="container-fluid mt-4 mb-4">
+    <ui-banner
+        bg="radial-gradient(544.32% 83.35% at 75.14% 62.23%, #A6A9FF 0%, #6F73EE 100%)"
+        :bg-image="require('@/assets/images/samokat_wheel.png')"
+        bg-size="contain"
+        :bg-image-up="true"
+      >
+      <div class="col-12 col-md-6">
+        <ui-badge       
+          title="Новинка"
+          bg-color="bg-green"
+          class="mb-4"        
+        />
+        <h2 class="mb-2">Электросамокаты Kugoo Kirin от официального дилера</h2>
+        <p class="mb-4">с бесплатной доставкой по РФ от 1 дня</p>
+        <ui-button      
+          title="Перейти в католог"
+          bg-color="bg-white"
+          text-color="color-purple"
+        />
+      </div>
+    </ui-banner>  
+  </div>
+
+  <div class="container-fluid mt-4 mb-4">
+    <ui-banner
+      bg="linear-gradient(19deg, #6F73EE 0%, rgba(111, 115, 238, 0.00) 100%)"
+      :bg-image="require('@/assets/images/banner_2.jpg')"
+      bg-size="cover"
+      :bg-image-up="false"
+      :min-mode="true"
+    >
+    <div class="col-12">
+      <h2>Каталог товаров</h2>
+    </div>
+    </ui-banner>  
+  </div>
+
+  <div class="container">  
     <div class="wrapper">
 
       <!-- Button-->
@@ -176,16 +238,15 @@
           v-for="item in products"
           :key="item.id"
           class="col-12 col-sm-6 col-lg-4">
-         <card-product 
-          :item="item"
-         />
+          <card-product 
+            :item="item"
+          />
         </div>
       </div>
     </div>
 
 
     <!-- Menu-top -->
-
     <div class="wrapper" style="margin-bottom: 30px;">
       <menu-top
         :items="menuTopList"
@@ -193,21 +254,21 @@
     </div>
 
 
-    <!-- Сборка-->
+    <!-- Banners -->
     <div class="wrapper" style="margin-bottom: 30px;">
       <div class="row">
         <div class="col-12">
-          1
-          <menu-top />
-          
-          <img src="@/assets/images/headerbanner.jpg" alt="headerbanner">
-          
-          <ui-skill />
-        </div>        
+          <banners   
+            title="Электросамокаты Kugoo Kirin от официального дилера" 
+            subtitle="с бесплатной доставкой по РФ от 1 дня"        
+
+          />
+        </div>
       </div>
-    </div>
-
-
+      
+    </div>  
+    
+    
     
 
   </div>
@@ -224,11 +285,13 @@ import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import UiCounter from '@/components/Ui/UiCounter.vue'
 import MenuTop from '@/components/MenuTop.vue'
 import CardProduct from '@/components/CardProduct.vue'
+import Banners from '@/components/Banners.vue'
+import UiBanner from '@/components/Ui/UiBanner.vue'
+
 
 
 export default {
   name: 'App',
-
   components: {
     UiButton,
     UiBadge,
@@ -239,9 +302,10 @@ export default {
     UiIconAction,
     UiCounter,
     MenuTop,
-    CardProduct
+    CardProduct,
+    Banners,
+    UiBanner
   },
-
   data() {
     return {
       counter: 0,
@@ -299,8 +363,6 @@ export default {
       this.counter++ 
       console.log(data) 
     }
-     
-    
   }
 }
 </script>
@@ -363,5 +425,4 @@ body {
 .wrapper {
   margin-top: 60px;
 }
-
 </style>

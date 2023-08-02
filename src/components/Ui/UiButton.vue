@@ -25,11 +25,11 @@
       },
       bgColor: {
         type: String,
-        default: ''
+        default: 'bg-white'
       },
       textColor: {
         type: String,
-        default: ''
+        default: 'color-purple'
       },
       disabled: {
         type: Boolean,
@@ -53,7 +53,6 @@
   font-weight: 400;
   line-height: 18px;
   border-radius: 5px;
-  color: #FFFFFF;
   border: none;
   outline: none;
   box-shadow: none;

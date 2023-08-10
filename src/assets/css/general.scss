@@ -1,3 +1,57 @@
+@import '@/assets/css/variables.scss';
+
+@font-face{
+  font-family: 'Jost';
+  src: url(@/assets/fonts/jost-light.ttf) format('ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Jost';
+  src: url(@/assets/fonts/jost-regular.ttf) format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Jost';
+  src: url(@/assets/fonts/jost-semiBold.ttf) format('ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Jost';
+  src: url(@/assets/fonts/jost-bold.ttf) format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-jost;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $black-1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .full-width {
   width: 100%;
 }

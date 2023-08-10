@@ -29,12 +29,14 @@
 .ui-skill {
 
   &__title {
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
+    font-size: 25px;    
+    line-height: normal;
   }
 
   &__subtitle {
-    font-weight: 300;
+    font-weight: 300;    
   }
 }
 </style>

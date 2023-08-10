@@ -38,8 +38,7 @@
       bgSize: {
         type: String,
         default: 'contain'
-      },   
-
+      },
       minMode: {
         type: Boolean,
         default: false
@@ -94,7 +93,7 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: $break_md) {
       padding: 20px 0;
       min-height: 210px;
     } 
@@ -103,7 +102,7 @@
       padding: 75px 0;
       min-height: auto;
 
-      @media (max-width: 768px) {
+      @media (max-width: $break_md) {
         padding: 40px 0;
       } 
     }
@@ -115,16 +114,13 @@
     text-transform: uppercase;
     margin: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: $break_md) {
       font-size: 24px;
     }
-
   }
 
   p {
     margin: 0;
   }
-
 }
-
 </style>

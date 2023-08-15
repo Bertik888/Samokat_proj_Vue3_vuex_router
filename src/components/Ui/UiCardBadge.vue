@@ -40,13 +40,13 @@
 @import '@/assets/css/variables.scss';
 
 .ui-card-badge {
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: $grey-1;
   padding: 10px 10px;
   display: flex;
   align-items: center;
-  width: 280px;
+  width: 100%;
 
   &__image {
     width: 56px;

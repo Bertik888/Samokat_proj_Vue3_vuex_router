@@ -50,13 +50,11 @@
                 class="me-2"
               />
 
-              <div 
-                class="header__burger"
-                :class="{ '_open': menuIsOpen}"  
-                @click="menuIsOpen = !menuIsOpen"            
-              >
-                {{ menuIsOpen ? 'close' : 'open' }}
-              </div>
+              <ui-burger
+                :is-open="menuIsOpen"
+                @click="menuIsOpen = !menuIsOpen"
+                class="ms-2"
+              />
             </div>
             
 
@@ -93,6 +91,8 @@ import UiButton from '@/components/Ui/UiButton.vue'
 import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import MenuTop from '@/components/MenuTop.vue'
 import MenuTopMobile from '@/components/MenuTopMobile.vue'
+import UiBurger from '@/components/Ui/UiBurger.vue'
+
 
 
 
@@ -102,7 +102,8 @@ import MenuTopMobile from '@/components/MenuTopMobile.vue'
       UiButton,
       UiIconAction,
       MenuTop,
-      MenuTopMobile
+      MenuTopMobile,
+      UiBurger
     },
     data() {
       return {
@@ -173,16 +174,5 @@ import MenuTopMobile from '@/components/MenuTopMobile.vue'
   &__menu {
     background-color: $grey-1;
   }
-
-  &__burger {
-    height: 40px;
-    display: flex;
-    align-items: center;
-
-    &._open {
-      color: $purple;
-    }
-  }
 }
-
 </style>

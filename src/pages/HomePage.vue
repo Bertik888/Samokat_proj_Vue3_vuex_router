@@ -63,6 +63,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
 import UiSkill from '@/components/Ui/UiSkill.vue'
 
 
+
   export default {
     name: 'HomePage',
     components: {

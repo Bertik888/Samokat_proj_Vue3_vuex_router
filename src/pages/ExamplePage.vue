@@ -2,31 +2,73 @@
 
   <!-- UiBurger -->
   <div class="wrapper">
-    <div class="container mb-4">
-      <icon-burger 
-        :items="menuTopList"
-      
+    <div class="container mb-4 bg-purple p-5 ">
+      <ui-burger 
+        class="mb-4"
+        :is-open="isOpenBurger1" 
+        @click="isOpenBurger1 = !isOpenBurger1"  
+      />
+      <ui-burger
+        :is-open="isOpenBurger2"   
+        color="white"
+        @click="isOpenBurger2 = !isOpenBurger2"  
+
       />
     </div>    
   </div>
-  
 
 
+  <!-- UiCardTopMounth -->
+  <div class="wrapper">
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <ui-card-top-mounth
+            :image="require('@/assets/images/banner_7.jpg')"
+            top-month="Товар месяца"
+            title="Kugoo Kirin M4"
+            sub-title="29 900 ₽"
+          />
+        </div>
+      </div>      
+    </div>
+  </div>
+
+
+  <!-- UiCardHelp -->
+  <div class="wrapper">
+    <div class="container mb-4">      
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <ui-card-help 
+            :image="require('@/assets/images/banner_6.png')"
+            title="Задать вопрос менеджеру"
+            @clickHelp="onClickHelp"    
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- UiCardBadge -->
   <div class="wrapper">
     <div class="container mb-4">
-      <ui-card-badge
-        :image="require('@/assets/images/banner_4.jpg')"        
-        title="Менеджер ответит на любой ваш вопрос о продуктах Kugoo"
-        text-action="Задать вопрос"   
-        @clickBtn="onClickBadge"    
-      />
-      <!-- bg="#F3A712" -->
-    </div>
-    
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <ui-card-badge
+            :image="require('@/assets/images/banner_4.jpg')"        
+            title="Менеджер ответит на любой ваш вопрос о продуктах Kugoo"
+            text-action="Задать вопрос"   
+            @clickBtn="onClickBadge"    
+          />
+        </div>
+      </div>      
+    </div>    
   </div>
+
+
+  <!-- CardCatalog -->
 
   <div class="wrapper">
     <div class="container mb-4">
@@ -36,6 +78,7 @@
             :image="require('@/assets/images/banner_5.jpg')"
             title="Электровелосипеды"
             sub-title="от 29 900 ₽"
+            @clickCatalog="onClickCatalog"
           />
         </div>
 
@@ -370,7 +413,12 @@ import CardProduct from '@/components/CardProduct.vue'
 import UiBanner from '@/components/Ui/UiBanner.vue'
 import UiCardBadge from '@/components/Ui/UiCardBadge.vue'
 import CardCatalog from '@/components/CardCatalog.vue'
-import IconBurger from '@/components/Ui/icons/IconBurger.vue'
+import UiBurger from '@/components/Ui/UiBurger.vue'
+import UiCardHelp from '@/components/Ui/UiCardHelp.vue'
+import UiCardTopMounth from '@/components/Ui/UiCardTopMounth.vue'
+
+
+
 
 
 
@@ -379,10 +427,12 @@ export default {
   components: {
     UiBanner,
 
-    IconBurger,
     UiCardBadge,
     CardCatalog,
-
+    UiBurger,
+    UiCardHelp,
+    UiCardTopMounth,
+    
     UiButton,
     UiBadge,
     UiSkill,
@@ -591,13 +641,22 @@ export default {
             }
           }
         }
-      ]
+      ],
+      isOpenBurger1: false,
+      isOpenBurger2: true
+
     }
   },
 
   methods: {
     onClickBadge() {
       console.log('onClickBadge')
+    },
+    onClickCatalog() {
+      console.log('onClickCatalog')
+    },
+    onClickHelp() {
+      console.log('onClickHelp')
     }
   }
 }

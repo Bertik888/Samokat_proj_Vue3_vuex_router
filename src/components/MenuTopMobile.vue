@@ -39,6 +39,7 @@
   background-color: $grey-1;
   justify-content: center;
   position: fixed;
+  z-index: 100;
   left: 0;
   right: 0;
   top: 100vh;
@@ -61,6 +62,6 @@
     &:hover {
       color: $purple;        
     }
-  }    
+  }
 }
 </style>

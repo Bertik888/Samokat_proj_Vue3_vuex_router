@@ -1,7 +1,9 @@
 <template>
   <div 
     :style="{ backgroundImage: `url(${image})` }"
-    class="card-catalog">
+    class="card-catalog"
+    @click="$emit('clickCatalog')"
+  >
     <div class="card-catalog__text-block">
       <div>{{ title }}</div>
       <div>{{ subTitle }}</div>
@@ -69,5 +71,4 @@
     }
   }
 }
-
 </style>

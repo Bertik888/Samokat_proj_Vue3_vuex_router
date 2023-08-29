@@ -3,7 +3,7 @@
     class="ui-btn"
     :class="[`_${size}`, bgColor, textColor, { '_active': active }]"
     :disabled="disabled"
-    @click="!active && $emit('onClick')" 
+    @click="$emit('onClick')" 
   >
     {{ title }}
   </button>

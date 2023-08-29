@@ -52,6 +52,9 @@
         />
       </div>
     </div>
+
+    <products class="mt-5"/>   
+
     
   </div>
 </template>
@@ -61,6 +64,8 @@ import UiBanner from '@/components/Ui/UiBanner.vue'
 import UiBadge from '@/components/Ui/UiBadge.vue'
 import UiButton from '@/components/Ui/UiButton.vue'
 import UiSkill from '@/components/Ui/UiSkill.vue'
+import Products from '@/components/Products.vue'
+
 
 
 
@@ -70,7 +75,8 @@ import UiSkill from '@/components/Ui/UiSkill.vue'
       UiBanner,
       UiBadge,
       UiButton,
-      UiSkill
+      UiSkill,
+      Products
     }
   }
 </script>

@@ -3,7 +3,7 @@
     <router-link  
       v-for="(item, idx) in items"       
       :key="idx"
-      :to="item.route"            
+      :to="item.route" 
       class="menu-top__item"
     >
       {{ item.title }}

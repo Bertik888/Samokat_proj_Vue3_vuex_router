@@ -105,6 +105,9 @@
     </ui-banner>  
   </div>
 
+  
+  <popular-categories class="mt-5"/>
+
 
 
 </template>
@@ -116,6 +119,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
 import UiSkill from '@/components/Ui/UiSkill.vue'
 import Products from '@/components/Products.vue'
 import CardBanner from '@/components/CardBanner.vue'
+import PopularCategories from '@/components/PopularCategories.vue'
 
   export default {
     name: 'HomePage',
@@ -125,7 +129,8 @@ import CardBanner from '@/components/CardBanner.vue'
       UiButton,
       UiSkill,
       Products,
-      CardBanner
+      CardBanner,
+      PopularCategories
     },
     methods: {
       onClickCardBanner() {

@@ -53,10 +53,60 @@
       </div>
     </div>
 
-    <products class="mt-5"/>   
+    <products class="mt-5"/>
 
-    
+    <!-- Удали потом mb-5 из row ниже -->
+    <div class="row mt-5 mb-5"> 
+      <div class="col-12 col-md-6">
+        <card-banner
+          :image="require('@/assets/images/banner_8.jpg')"
+          title="Подбор модели электросамоката"
+          sub-title="Пройдите тест и выберите электросамокат по своим критериям"
+          text-action="Подобрать модель"
+          @clickCardBanner="onClickCardBanner"   
+        />
+      </div>
+      <div class="col-12 col-md-6">
+        <card-banner
+          :image="require('@/assets/images/banner_9.jpg')"
+          title="Сервисное обслуживание"
+          sub-title="Крупнейший сервисный центр в России для продуктов Kugoo"
+          text-action="Подобрать модель"
+          @clickCardBanner="onClickCardBanner"   
+        />
+      </div>
+    </div>    
   </div>
+
+
+  <div class="container-fluid mb-4">
+    <ui-banner
+      bg="radial-gradient(708.28% 82.86% at 23.30% 72.57%, #595959 0%, #3B3E46 100%)"
+      :bg-image="require('@/assets/images/banner_3.png')"
+      bg-size="contain"
+      :bg-image-up="true"
+      bg-position="center left"
+    >
+      <div class="col-12 col-md-6"></div>
+    
+      <div class="col-12 col-md-6">
+        <ui-badge       
+          title="Акция"
+          bg-color="bg-red"
+          class="mb-4"
+        />
+        <h2 class="mb-2">Бесплатная доставка электросамокатов по России до 01.09</h2>
+        <ui-button      
+          title="Подробнее"
+          bg-color="bg-white"
+          text-color="color-purple"
+        />
+      </div>
+    </ui-banner>  
+  </div>
+
+
+
 </template>
 
 <script>
@@ -65,9 +115,7 @@ import UiBadge from '@/components/Ui/UiBadge.vue'
 import UiButton from '@/components/Ui/UiButton.vue'
 import UiSkill from '@/components/Ui/UiSkill.vue'
 import Products from '@/components/Products.vue'
-
-
-
+import CardBanner from '@/components/CardBanner.vue'
 
   export default {
     name: 'HomePage',
@@ -76,7 +124,13 @@ import Products from '@/components/Products.vue'
       UiBadge,
       UiButton,
       UiSkill,
-      Products
+      Products,
+      CardBanner
+    },
+    methods: {
+      onClickCardBanner() {
+        console.log('onClickCardBanner')
+      }
     }
   }
 </script>

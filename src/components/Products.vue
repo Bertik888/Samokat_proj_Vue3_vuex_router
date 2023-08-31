@@ -49,13 +49,11 @@
         :title="isShowAll ? 'Свернуть' : 'Смотреть все'"
         bg-color="bg-grey-1"
         text-color="color-purple"
-        size="md"  
+        size="md"
         @click="isShowAll = !isShowAll"
         class="my-btn"
       />
-    </div>
-
-    
+    </div>    
   </div>
 </template>
 
@@ -114,5 +112,4 @@ import { mapGetters } from 'vuex'
 .my-btn {
   min-width: 152px;
 }
-
 </style>

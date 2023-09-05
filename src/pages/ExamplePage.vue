@@ -344,21 +344,21 @@
     <div class="wrapper">
       <ui-skill
         title="Гарантия 1 год"
-        subtitle="на весь ассортимент"      
+        sub-title="на весь ассортимент"      
       />
     </div>
 
     <div class="wrapper">
       <ui-skill
         title="Рассрочка"
-        subtitle="от 6 месяцев"      
+        sub-title="от 6 месяцев"      
       />
     </div>
 
     <div class="wrapper">
       <ui-skill
         title="Подарки"
-        subtitle="и бонусы к покупкам"      
+        sub-title="и бонусы к покупкам"      
       />
     </div>
 

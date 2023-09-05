@@ -4,7 +4,7 @@
       {{ title }}
     </div>
     <div class="ui-skill__subtitle">
-      {{ subtitle }}
+      {{ subTitle }}
     </div>
   </div>
 </template>
@@ -17,7 +17,7 @@
         type: String,
         default: ''
       },
-      subtitle: {
+      subTitle: {
         type: String,
         default: ''
       }

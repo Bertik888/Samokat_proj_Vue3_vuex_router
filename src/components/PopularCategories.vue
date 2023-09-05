@@ -1,8 +1,8 @@
 <template>
   <div class="container mb-4">
-    <div class="row popular">
+    <div class="row">
       <div class="col-12 d-flex justify-content-lg-between align-items-lg-center flex-column flex-lg-row">
-        <h2 class="popular-title mb-0">
+        <h2 class="text-title mb-0">
           Популярные категории
         </h2> 
         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 ">
@@ -18,21 +18,23 @@
 
     <div class="row mt-5">
       <div 
-        v-for="item in popularCategories"
+        v-for="item in filteringCategories"
         :key="item.id"       
         class="col-12 col-sm-6 col-md-3 mb-3"
       >
+
+      
         <card-catalog
           :item="item"
-          :image="require('@/assets/images/banner_5.jpg')"
+          :image="require(`@/assets/images/banner_5.jpg`)"
           :title="item.title"
           :sub-title="item.price"
-          @clickCatalog="onClickCatalog"
+          @clickCatalog="onClickCatalog(item.id)"
         />
       </div> 
 
       <div 
-        v-if="popularCategories.length >= count"
+        v-if="categories.length >= count"
         class="col-12 d-flex justify-content-center mt-3"
       >
         <ui-button
@@ -41,7 +43,7 @@
           text-color="color-purple"
           size="md"
           @click="isShowAll = !isShowAll"
-          class="my-btn"
+          class="btn-all"
         />
       </div> 
     </div>
@@ -53,8 +55,6 @@ import UiCardBadge from '@/components/Ui/UiCardBadge.vue'
 import CardCatalog from '@/components/CardCatalog.vue'
 import UiButton from '@/components/Ui/UiButton.vue'
 
-
-
   export default {
     name: 'PopularCategories',
     components: {
@@ -64,76 +64,83 @@ import UiButton from '@/components/Ui/UiButton.vue'
     },
     data() {
       return {
-        isShow: false,
+        isShowAll: false,
         count: 8,
-        popularCategories: [
+        categories: [
           {
             id: 1,
             title: 'Робот-пылесоссы',
             price: 'от 29 900 ₽',
-            image: 'banner_5'
+            image: 'banner_5.jpg'
           },
           {
             id: 2,
             title: 'Электровелосипеды',
             price: 'от 29 900 ₽',
-            image: 'banner_10'
+            image: 'banner_10.jpg'
           },
           {
             id: 3,
             title: 'Весы',
             price: 'от 29 900 ₽',
-            image: 'banner_5'
+            image: 'banner_5.jpg'
           },
           {
             id: 4,
             title: 'Робот-пылесоссы',
             price: 'от 29 900 ₽',
-            image: 'banner_5'
+            image: 'banner_5.jpg'
           },
           {
             id: 5,
             title: 'Весы',
             price: 'от 29 900 ₽',
-            image: 'banner_5'
+            image: 'banner_5.jpg'
           },
           {
             id: 6,
             title: 'Робот-пылесоссы',
             price: 'от 29 900 ₽',
-            image: 'banner_5'
+            image: 'banner_5.jpg'
           },
           {
             id: 7,
             title: 'Электровелосипеды',
             price: 'от 29 900 ₽',
-            image: 'banner_5'
+            image: 'banner_5.jpg'
           },
           {
             id: 8,
             title: 'Весы',
             price: 'от 29 900 ₽',
-            image: 'banner_5'
+            iimage: 'banner_5.jpg'
           },
           {
             id: 9,
             title: 'Робот-пылесоссы',
             price: 'от 29 900 ₽',
-            image: 'banner_5'
+            image: 'banner_5.jpg'
           }
         ]
-    }
-    }
+      }
+    },
+    computed: {
+      filteringCategories() {
+        return this.isShowAll ? this.categories : this.categories.slice(0, this.count)
+      }
+    },
+    methods: {
+      onClickCatalog(id) {
+        console.log('onClickCatalog', id)
+      },
+      getImage(img) {
+        return require(`@/assets/images/${img}`)
+      }
+    },
+    
   }
 </script>
 
 <style lang="scss" scoped>
 @import '@/assets/css/variables.scss';
-
-.popular-title {
-  font-size: 35px;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-  }
 </style>

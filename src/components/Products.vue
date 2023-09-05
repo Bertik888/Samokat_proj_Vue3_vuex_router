@@ -1,10 +1,10 @@
 <template>  
-  <div class="row products">
+  <div class="row">
     <div class="col-12 d-flex justify-content-lg-between align-items-lg-center flex-column flex-lg-row mb-5">
       <h2 class="text-title mb-0">
         Электросамокаты
       </h2>
-      <div class="products__filter">
+      <div>
         <ui-button
           title="Хиты продаж"
           bg-color="bg-grey-1"
@@ -51,7 +51,7 @@
         text-color="color-purple"
         size="md"
         @click="isShowAll = !isShowAll"
-        class="my-btn"
+        class="btn-all"
       />
     </div>    
   </div>
@@ -106,10 +106,3 @@ import { mapGetters } from 'vuex'
     }
   }
 </script>
-
-<style lang="scss" scoped>
-@import '@/assets/css/variables.scss';
-.my-btn {
-  min-width: 152px;
-}
-</style>

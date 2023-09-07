@@ -35,7 +35,12 @@
         type: String,
         default: ''
       }
-    }
+    },
+    // methods: {
+    //   onClickCardBanner() {
+    //     console.log('onClickCardBanner')
+    //   }
+    // }
   }
 </script>
 

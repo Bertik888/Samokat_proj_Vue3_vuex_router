@@ -28,34 +28,33 @@
       <div class="col-12 col-lg-3 col-sm-6 mb-3">
         <ui-skill
           title="Гарантия 1 год"
-          subtitle="на весь ассортимент"      
+          sub-title="на весь ассортимент"      
         />
       </div>
       <div class="col-12 col-lg-3 col-sm-6 mb-3">
         <ui-skill
           title="Рассрочка"
-          subtitle="от 6 месяцев"      
+          sub-title="от 6 месяцев"      
         />
       </div>
 
       <div class="col-12 col-lg-3 col-sm-6 mb-3">
         <ui-skill
           title="Подарки"
-          subtitle="и бонусы к покупкам"      
+          sub-title="и бонусы к покупкам"      
         />
       </div>
 
       <div class="col-12 col-lg-3 col-sm-6 mb-3">
         <ui-skill
           title="Акции"
-          subtitle="скидки до 50%"      
+          sub-title="скидки до 50%"      
         />
       </div>
     </div>
 
     <products class="mt-5"/>
 
-    <!-- Удали потом mb-5 из row ниже -->
     <div class="row mt-5 mb-5"> 
       <div class="col-12 col-md-6">
         <card-banner
@@ -77,7 +76,6 @@
       </div>
     </div>    
   </div>
-
 
   <div class="container-fluid mb-4">
     <ui-banner
@@ -104,11 +102,12 @@
       </div>
     </ui-banner>  
   </div>
-
   
   <popular-categories class="mt-5"/>
 
-
+  <div class="container mt-5 mb-5">
+    <profit-block />
+  </div>
 
 </template>
 
@@ -120,6 +119,10 @@ import UiSkill from '@/components/Ui/UiSkill.vue'
 import Products from '@/components/Products.vue'
 import CardBanner from '@/components/CardBanner.vue'
 import PopularCategories from '@/components/PopularCategories.vue'
+import ProfitBlock from '@/components/ProfitBlock.vue'
+import Subscribe from '@/components/Subscribe.vue'
+
+
 
   export default {
     name: 'HomePage',
@@ -130,7 +133,9 @@ import PopularCategories from '@/components/PopularCategories.vue'
       UiSkill,
       Products,
       CardBanner,
-      PopularCategories
+      PopularCategories,
+      ProfitBlock,
+      Subscribe
     },
     methods: {
       onClickCardBanner() {

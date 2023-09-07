@@ -21,9 +21,7 @@
         v-for="item in filteringCategories"
         :key="item.id"       
         class="col-12 col-sm-6 col-md-3 mb-3"
-      >
-
-      
+      >      
         <card-catalog
           :item="item"
           :image="require(`@/assets/images/banner_5.jpg`)"

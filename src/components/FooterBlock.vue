@@ -1,23 +1,19 @@
 <template>
-  
-  <subscribe />
-
-  <div class="footer mt-5">
+  <div class="footer">
     <div class="container">
       <div class="row">
-        <!-- <div class="col-md-3 col-6 col-12"> - flex-derection: column? -->
-        <div class="col-md-3 col-6 col-12">
-          <h4>Каталог товаров</h4>
-          <ul class="footer__subtitle list-unstyled">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer__subtitle">Каталог товаров</h4>
+          <ul class="footer__list list-unstyled">
             <li><a href="#">Электросамокаты</a></li>
             <li><a href="#">Электроскутеры</a></li>
             <li><a href="#">Электровелосипеды</a></li>
             <li><a href="#">Электросамокаты</a></li>
           </ul>          
         </div>
-        <div class="col-md-3 col-6 col-12">
-          <h4>Покупателям</h4>
-          <ul class="footer__subtitle list-unstyled">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer__subtitle">Покупателям</h4>
+          <ul class="footer__list list-unstyled">
             <li><a href="#">Сервисный центр</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">Рассрочка</a></li>
@@ -27,9 +23,9 @@
             <li><a href="#">Акции</a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-6 col-12">
-          <h4>Контакты</h4>
-          <ul class="footer__subtitle list-unstyled">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer__subtitle">Контакты</h4>
+          <ul class="footer__list list-unstyled">
             <li>Call-центр</li>
             <li>+7 (800) 505-54-61</li>
             <li>Пн-Вс 10:00 - 20:00</li>
@@ -38,9 +34,9 @@
             <li>Пн-Вс 10:00 - 20:00</li>            
           </ul>
         </div>
-        <div class="col-md-3 col-6 col-12">
-          <h4>Адреса магазинов</h4>
-          <ul class="footer__subtitle list-unstyled">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer__subtitle">Адреса магазинов</h4>
+          <ul class="footer__list list-unstyled">
             <li>в Москве ул. Ткацкая, 5 стр. 16</li>
             <li>+7 (499) 406 15 87;</li>
             <li>в Санкт-Петербурге ул. Фрунзе, 2</li>
@@ -323,13 +319,9 @@
 </template>
 
 <script>
-import Subscribe from '@/components/Subscribe.vue'
 
   export default {
-    name: 'FooterBlock',
-    components: {
-      Subscribe
-    }
+    name: 'FooterBlock'
   }
 </script>
 
@@ -337,16 +329,40 @@ import Subscribe from '@/components/Subscribe.vue'
 @import '@/assets/css/variables.scss';
 
 .footer {
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+
+  
+
   &__line {
     opacity: 0.15;
     background: #5D6C7B;
     margin-top: 20px;
   }
 
-  &__subtitle {
+  &__list {
     color: $grey;
     font-size: 14px;
-    line-height: normal;
+    line-height: normal;    
+
+    li {
+      margin-top: 16px;
+    }
+
+    a {    
+      text-decoration: none;
+      transition: all .3s;
+      color: $black-1;
+
+      &:hover {
+        color: $purple;
+      }
+    }
   }
 
   &__info {
@@ -364,23 +380,5 @@ import Subscribe from '@/components/Subscribe.vue'
   p:hover {
     color: $purple;
   }
-}
-.footer h4 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 16px;
-}
-.footer a {
-  text-decoration: none;
-  transition: all .3s;
-  color: $black-1;
-}
-
-a:hover {
-  color: $purple;
-}
-.footer li {
-  margin-top: 16px;
 }
 </style>

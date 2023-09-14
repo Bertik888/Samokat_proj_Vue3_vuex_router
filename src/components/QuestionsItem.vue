@@ -9,13 +9,10 @@
       <button class="questions-item__button"
         @click="isOpen = !isOpen"
       >
-        <i 
-          v-if="isOpen === true"        
-          class="bi bi-x-lg"></i>
-        <i 
-          v-else="isOpen === false"
-          class="bi bi-plus-lg"></i>
-          <!-- вопрос по isOpen и !isOpen -->
+        <i
+          class="bi bi-dash-lg"
+          :class="[isOpen ? 'bi-dash-lg' : 'bi-plus-lg']"  
+        ></i>
       </button>
     </div>    
     <transition name="fade">
@@ -63,6 +60,7 @@
 .questions-item {
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid $grey-2;
 
   &__title {
     font-size: 16px;
@@ -82,6 +80,13 @@
     box-shadow: none;
     background: none;
     background-color: transparent;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    line-height: 1;
   }
 }
 </style>

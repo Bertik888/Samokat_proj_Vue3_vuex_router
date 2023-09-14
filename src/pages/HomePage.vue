@@ -105,8 +105,13 @@
   
   <popular-categories class="mt-5"/>
 
-  <div class="container mt-5 mb-5">
+  <div class="container mt-5">
     <profit-block />
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <questions-block />
+
   </div>
 
 </template>
@@ -121,6 +126,8 @@ import CardBanner from '@/components/CardBanner.vue'
 import PopularCategories from '@/components/PopularCategories.vue'
 import ProfitBlock from '@/components/ProfitBlock.vue'
 import Subscribe from '@/components/Subscribe.vue'
+import QuestionsBlock from '@/components/QuestionsBlock.vue'
+
 
 
 
@@ -135,7 +142,8 @@ import Subscribe from '@/components/Subscribe.vue'
       CardBanner,
       PopularCategories,
       ProfitBlock,
-      Subscribe
+      Subscribe,
+      QuestionsBlock
     },
     methods: {
       onClickCardBanner() {

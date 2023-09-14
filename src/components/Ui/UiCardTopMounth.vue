@@ -24,12 +24,7 @@
         <div class="ui-card-top-mounth__title">{{ title }}</div>
         <div class="ui-card-top-mounth__subtitle">{{ subTitle }}</div>
       </div>
-
-
     </div>
-
-    
-    
   </div>
 </template>
 

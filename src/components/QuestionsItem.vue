@@ -6,9 +6,17 @@
       <div class="questions-item__title">
         {{ title }}
       </div>      
-      <button
+      <button class="questions-item__button"
         @click="isOpen = !isOpen"
-      >X</button>
+      >
+        <i 
+          v-if="isOpen === true"        
+          class="bi bi-x-lg"></i>
+        <i 
+          v-else="isOpen === false"
+          class="bi bi-plus-lg"></i>
+          <!-- вопрос по isOpen и !isOpen -->
+      </button>
     </div>    
     <transition name="fade">
       <div   
@@ -66,6 +74,14 @@
     font-weight: 400;
     line-height: normal;
     padding-top: 24px;
+  }
+
+  &__button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    background-color: transparent;
   }
 }
 </style>

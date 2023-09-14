@@ -1,7 +1,5 @@
 <template>
-  <header-block 
-    class="mb-3"
-  />
+  <header-block class="mb-3" />
   <router-view />
   <footer-block />
 </template>

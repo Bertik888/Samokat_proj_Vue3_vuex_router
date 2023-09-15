@@ -69,6 +69,7 @@
   }
 
   &__answer {
+    font-size: 14px;
     font-weight: 400;
     line-height: normal;
     padding-top: 24px;

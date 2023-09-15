@@ -113,6 +113,14 @@
     <questions-block />
   </div>
 
+  <div   
+    class="container mt-5 mb-5"
+  >
+    <product-page     
+      :item="item"
+    />
+  </div>
+
 </template>
 
 <script>
@@ -126,9 +134,7 @@ import PopularCategories from '@/components/PopularCategories.vue'
 import ProfitBlock from '@/components/ProfitBlock.vue'
 import Subscribe from '@/components/Subscribe.vue'
 import QuestionsBlock from '@/components/QuestionsBlock.vue'
-
-
-
+import ProductPage from '@/components/ProductPage.vue'
 
   export default {
     name: 'HomePage',
@@ -142,7 +148,8 @@ import QuestionsBlock from '@/components/QuestionsBlock.vue'
       PopularCategories,
       ProfitBlock,
       Subscribe,
-      QuestionsBlock
+      QuestionsBlock,
+      ProductPage
     },
     methods: {
       onClickCardBanner() {

@@ -116,7 +116,13 @@
   <div   
     class="container mt-5 mb-5"
   >
-    <product-page     
+    <product-page />
+  </div>
+
+  <div   
+    class="container mt-5 mb-5"
+  >
+    <product-page2     
       :item="item"
     />
   </div>
@@ -134,7 +140,9 @@ import PopularCategories from '@/components/PopularCategories.vue'
 import ProfitBlock from '@/components/ProfitBlock.vue'
 import Subscribe from '@/components/Subscribe.vue'
 import QuestionsBlock from '@/components/QuestionsBlock.vue'
+import ProductPage2 from '@/components/ProductPage2.vue'
 import ProductPage from '@/components/ProductPage.vue'
+
 
   export default {
     name: 'HomePage',
@@ -149,7 +157,8 @@ import ProductPage from '@/components/ProductPage.vue'
       ProfitBlock,
       Subscribe,
       QuestionsBlock,
-      ProductPage
+      ProductPage,
+      ProductPage2
     },
     methods: {
       onClickCardBanner() {

@@ -87,7 +87,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
             id: 4,
             title: 'Робот-пылесоссы',
             price: 'от 29 900 ₽',
-            image: 'banner_5.jpg'
+            image: 'banner_10.jpg'
           },
           {
             id: 5,
@@ -99,7 +99,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
             id: 6,
             title: 'Робот-пылесоссы',
             price: 'от 29 900 ₽',
-            image: 'banner_5.jpg'
+            image: 'banner_10.jpg'
           },
           {
             id: 7,
@@ -111,7 +111,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
             id: 8,
             title: 'Весы',
             price: 'от 29 900 ₽',
-            iimage: 'banner_5.jpg'
+            image: 'banner_10.jpg'
           },
           {
             id: 9,
@@ -134,11 +134,81 @@ import UiButton from '@/components/Ui/UiButton.vue'
       getImage(img) {
         return require(`@/assets/images/${img}`)
       }
-    },
-    
+    }    
   }
 </script>
 
 <style lang="scss" scoped>
 @import '@/assets/css/variables.scss';
 </style>
+
+
+<!-- ПО КАРТИИНКЕ -->
+<!-- <template>
+  <div 
+    :class="{ 'active': isActive }" 
+    @click="$emit('changeFilter', item)"
+    class="filter-item">
+    <img 
+      :src="getImage(item.image)"
+      :alt="item.name"
+      class="filter-item__image"
+    >
+      {{ item.name }}
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'FilterItem',
+
+    props: {
+      item: {
+        type: Object
+      },
+
+      currentFilterId: {
+        type: Number,
+        default: null
+      }
+    },
+
+    computed: {
+      isActive () {
+        return this.currentFilterId === this.item.id 
+        // возврат true или false, если true, тогда присваивается класс active 
+      }
+    },
+
+    methods: {
+      getImage(img) {
+        return require(`@/assets/images/icons/${img}`)
+      }
+    }
+
+    
+  }
+</script>
+
+<style lang="scss" scoped>
+@import '@/assets/css/variables.scss';
+.filter-item {
+  display: flex;
+  align-items: center;   
+  font-family: $font-family-nunito;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 8px 14px;
+  height: 40px;
+  // border: 1px solid #000;
+  border-radius: 50px;
+  background: $white;
+}
+
+.active {
+  background: $yellow;
+
+}
+
+</style> -->

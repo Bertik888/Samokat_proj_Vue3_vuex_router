@@ -1,4 +1,6 @@
-<template>
+<template> 
+
+  
 
   <!-- UiBurger -->
   <div class="wrapper">
@@ -422,6 +424,7 @@ import UiCardTopMounth from '@/components/Ui/UiCardTopMounth.vue'
 
 
 
+
 export default {
   name: 'App',
   components: {
@@ -442,7 +445,7 @@ export default {
     UiIconAction,
     UiCounter,
     MenuTop,
-    CardProduct
+    CardProduct,
     
   },
   data() {

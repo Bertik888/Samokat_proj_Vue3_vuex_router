@@ -6,7 +6,7 @@
           <img 
             src="@/assets/images/logo.svg" 
             alt="logo"
-            class="header__logo"
+            class="general-logo me-4"
           >
           <ui-button 
             title="Каталог"
@@ -146,14 +146,6 @@ import UiBurger from '@/components/Ui/UiBurger.vue'
 @import '@/assets/css/variables.scss';
 
 .header {
-  &__logo {
-    margin-right: 30px;
-    height: 43px;
-
-    @media (max-width: $break_md) {
-      height: 26px;
-    }
-  }
 
   &__top {
     padding-top: 30px;

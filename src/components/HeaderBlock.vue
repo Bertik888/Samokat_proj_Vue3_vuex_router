@@ -121,7 +121,7 @@ import UiBurger from '@/components/Ui/UiBurger.vue'
           },
           {
             title: 'Тест-драйв',
-            route: '/home'
+            route: '/product/1'
           },
           {
             title: 'Блог',

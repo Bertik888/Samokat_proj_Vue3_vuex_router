@@ -65,7 +65,7 @@ body {
 }
 
 .text-title-1 {
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -86,4 +86,10 @@ body {
   @media (max-width: $break_md) {
     height: 20px;
   }
+}
+
+.line {
+  background: $grey-2;
+  opacity: 0.15;
+  margin: 20px 0 20px;
 }

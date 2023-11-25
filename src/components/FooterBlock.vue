@@ -57,7 +57,6 @@
             alt="logo"
             class="general-logo"         
           >    
-          <!-- Вопрос по адаптивке, что добавить, ес добавить col-12 /sm/lg/xs сразу идет перенос на новую строку, а на sm лезет друг на друга -->
           <img 
             src="@/assets/images/icons_svg/google_play.svg"
             alt="google_play"
@@ -147,7 +146,6 @@
 </template>
 
 <script>
-
   export default {
     name: 'FooterBlock'
   }
@@ -155,7 +153,6 @@
 
 <style lang="scss" scoped>
 @import '@/assets/css/variables.scss';
-
 .footer {
 
   &__subtitle {

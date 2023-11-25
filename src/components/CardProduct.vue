@@ -12,12 +12,18 @@
       />
     </div>    
 
-    <div class="card-product__image">
+    <div 
+      class="card-product__image"
+      @click="goTo"
+    >
       <img src="@/assets/images/samokat.jpg" alt="samokat">
     </div>
 
     <div class="card-product__wrapper">
-      <div class="card-product__title">
+      <div 
+        class="card-product__title"
+        @click="goTo"      
+      >
         {{ item.name }}
       </div>
 
@@ -108,9 +114,10 @@
         :title="isStock ? 'Купить в 1 клик' : 'Оформить предзаказ'"
         class="full-width" 
         :bg-color="isStock ? 'bg-purple' : 'bg-orange'"
-        @click="isStock ? $emit('buy') : $emit('preOrder')"
+        @click="isStock ? $emit('buy', item.id) : $emit('preOrder', item.id)"
       />
     </div>    
+    
   </div>
 </template>
 
@@ -128,6 +135,11 @@ import UiButton from './Ui/UiButton.vue'
       UiIconAction,
       UiButton
     },
+    data() {
+      return {
+        counter: 1
+      }
+    },
     props: {
       item: {
         type: Object,
@@ -143,6 +155,14 @@ import UiButton from './Ui/UiButton.vue'
       },
       isStock() {
         return this.item.stock > 0
+      }
+    },
+    methods: {
+      goTo() {
+        this.$router.push({
+          name: 'productPage', 
+          params: {product_id: this.item.id}
+        })
       }
     }
   }
@@ -165,6 +185,7 @@ import UiButton from './Ui/UiButton.vue'
   
   &__image {
     height: 231px;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -180,6 +201,7 @@ import UiButton from './Ui/UiButton.vue'
   &__title {
     color: $black-1;
     font-weight: 700;
+    cursor: pointer;
   }
 
   &__info {

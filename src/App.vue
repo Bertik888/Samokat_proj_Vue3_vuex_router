@@ -1,8 +1,8 @@
 <template>
-  <header-block class="mb-3" />
+  <header-block class="mb-3 " />
   <router-view />
   <subscribe />
-  <footer-block class="mt-5" />
+  <footer-block class="mt-5 " />
 </template>
 
 <script>

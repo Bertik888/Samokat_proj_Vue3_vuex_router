@@ -1,5 +1,4 @@
 <template>
-  
   <div class="row">
     <div class="col-12">
       <div class="mb-5 flex-column align-items-center text-center">
@@ -48,7 +47,6 @@
             title="Полная документация и гарантия 1 год"
             sub-title="При покупке вам выдается кассовый чек, товарный чек и гарантийный талон – эти документы дают право на гарантийное обслуживание."  
           />
-
         </div>
         <div class="col">
           <profit-card  
@@ -75,7 +73,6 @@
             @onClick="onClickProfitCard"
           />            
         </div>
-
       </div>
     </div>
   </div>
@@ -96,12 +93,6 @@ import ProfitCard from '@/components/ProfitCard.vue'
       onClickProfitCard() {
         console.log('onClickProfitCard')
       }
-
     }
   }
 </script>
-
-<style lang="scss">
-@import '@/assets/css/variables.scss';
-
-</style>

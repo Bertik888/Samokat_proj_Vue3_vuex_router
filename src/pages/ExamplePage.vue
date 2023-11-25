@@ -1,6 +1,4 @@
-<template> 
-
-  
+<template>
 
   <!-- UiBurger -->
   <div class="wrapper">
@@ -103,10 +101,6 @@
       
     </div>    
   </div>
-
-  
-
-
 
   <!-- UiBanner -->
 
@@ -400,7 +394,7 @@
     <!-- product-page__presents -->
 
     <!-- <div class="product-page__presents mt-3">
-          <h2 class="text-title-1 mb-0">2 подарка при покупке</h2>
+          <h2 class="text-title-2 mb-0">2 подарка при покупке</h2>
           <div class="product-page__presents_wrapper row mt-2">
             <div class="product-page__present">
               <div class="product-page__present_icon"> -->
@@ -460,9 +454,6 @@
       </div>
     </div>
   </div> -->
-    
-    
-    
 
   </div>
 </template>
@@ -484,12 +475,6 @@ import CardCatalog from '@/components/CardCatalog.vue'
 import UiBurger from '@/components/Ui/UiBurger.vue'
 import UiCardHelp from '@/components/Ui/UiCardHelp.vue'
 import UiCardTopMounth from '@/components/Ui/UiCardTopMounth.vue'
-
-
-
-
-
-
 
 export default {
   name: 'App',

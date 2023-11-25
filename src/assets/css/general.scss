@@ -65,6 +65,13 @@ body {
 }
 
 .text-title-1 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text-title-2 {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -74,6 +81,17 @@ body {
 .text-subtitle {
   font-size: 20px;
   line-height: normal;
+}
+
+.text-subtitle-1 {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.text-subtitle-2 {
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 400;
 }
 
 .btn-all {

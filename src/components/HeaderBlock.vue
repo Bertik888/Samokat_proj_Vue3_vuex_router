@@ -56,8 +56,6 @@
                 class="ms-2"
               />
             </div>
-            
-
           </div>
         </div>
       </div>
@@ -81,8 +79,6 @@
         :is-open="menuIsOpen"
       />
     </div>
-    
-
   </div>
 </template>
 
@@ -92,9 +88,6 @@ import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import MenuTop from '@/components/MenuTop.vue'
 import MenuTopMobile from '@/components/MenuTopMobile.vue'
 import UiBurger from '@/components/Ui/UiBurger.vue'
-
-
-
 
   export default {
     name: 'HeaderBlock',
@@ -129,7 +122,7 @@ import UiBurger from '@/components/Ui/UiBurger.vue'
           },
           {
             title: 'Контакты',
-            route: '/home'
+            route: '/cart'
           },
           {
             title: 'Акции',

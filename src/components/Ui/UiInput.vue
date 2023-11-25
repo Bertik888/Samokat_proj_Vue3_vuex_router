@@ -7,6 +7,7 @@
       @input="onInput"
       @focus="onFocus"
       class="ui-input__input"
+      :class="[bgColor, textColor]"
     >
   </div>
 </template>
@@ -23,6 +24,14 @@
       placeholder: {
         type: String,
         default: ''
+      },
+      bgColor: {
+        type: String,
+        default: ''
+      },
+      textColor: {
+        type: String,
+        default: 'color-white'
       }
     },
     methods: {
@@ -50,18 +59,7 @@
     padding: 15px 25px;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.20);
-    color: white;
     line-height: normal;
-
-    &:-moz-placeholder {
-      color: white;
-    }
-    &::-webkit-input-placeholder {
-      color: white;
-    }
-    &::-moz-placeholder {
-      color: white;
-    }  
   }  
 }
 </style>

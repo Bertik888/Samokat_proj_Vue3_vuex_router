@@ -87,7 +87,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
             id: 4,
             title: 'Робот-пылесоссы',
             price: 'от 29 900 ₽',
-            image: 'banner_5.jpg'
+            image: 'banner_10.jpg'
           },
           {
             id: 5,
@@ -99,7 +99,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
             id: 6,
             title: 'Робот-пылесоссы',
             price: 'от 29 900 ₽',
-            image: 'banner_5.jpg'
+            image: 'banner_10.jpg'
           },
           {
             id: 7,
@@ -111,7 +111,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
             id: 8,
             title: 'Весы',
             price: 'от 29 900 ₽',
-            iimage: 'banner_5.jpg'
+            image: 'banner_10.jpg'
           },
           {
             id: 9,
@@ -134,8 +134,7 @@ import UiButton from '@/components/Ui/UiButton.vue'
       getImage(img) {
         return require(`@/assets/images/${img}`)
       }
-    },
-    
+    }    
   }
 </script>
 

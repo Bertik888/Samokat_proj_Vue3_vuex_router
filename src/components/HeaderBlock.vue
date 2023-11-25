@@ -6,7 +6,7 @@
           <img 
             src="@/assets/images/logo.svg" 
             alt="logo"
-            class="header__logo"
+            class="general-logo me-4"
           >
           <ui-button 
             title="Каталог"
@@ -56,8 +56,6 @@
                 class="ms-2"
               />
             </div>
-            
-
           </div>
         </div>
       </div>
@@ -81,8 +79,6 @@
         :is-open="menuIsOpen"
       />
     </div>
-    
-
   </div>
 </template>
 
@@ -92,9 +88,6 @@ import UiIconAction from '@/components/Ui/UiIconAction.vue'
 import MenuTop from '@/components/MenuTop.vue'
 import MenuTopMobile from '@/components/MenuTopMobile.vue'
 import UiBurger from '@/components/Ui/UiBurger.vue'
-
-
-
 
   export default {
     name: 'HeaderBlock',
@@ -121,7 +114,7 @@ import UiBurger from '@/components/Ui/UiBurger.vue'
           },
           {
             title: 'Тест-драйв',
-            route: '/home'
+            route: '/product/1'
           },
           {
             title: 'Блог',
@@ -129,7 +122,7 @@ import UiBurger from '@/components/Ui/UiBurger.vue'
           },
           {
             title: 'Контакты',
-            route: '/home'
+            route: '/cart'
           },
           {
             title: 'Акции',
@@ -146,14 +139,6 @@ import UiBurger from '@/components/Ui/UiBurger.vue'
 @import '@/assets/css/variables.scss';
 
 .header {
-  &__logo {
-    margin-right: 30px;
-    height: 43px;
-
-    @media (max-width: $break_md) {
-      height: 26px;
-    }
-  }
 
   &__top {
     padding-top: 30px;

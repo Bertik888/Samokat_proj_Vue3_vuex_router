@@ -13,17 +13,21 @@ app.get('/api/products/', (request, response) => {
   response.status(200).json(DataBase.getProducts())
 })
 
+// добавляем продукт в корзину
+app.post('/api/basket/', (request, response) => {
+  //  вычленяем из запроса id и count
+  const { id, count = 1, options } = request.body
 
-
-
-
-
-
-
-
-
-
-
+  // валидируем запрос, если id или count не передавали, то возвращаем ошибку с ее описанием
+  if (!id) {
+    response.status(400).send('Не указан обязательный параметр id')
+  } else {
+    // добавляем в корзину продукт, в ответе вернется добавленный продукт
+    const addedProduct = DataBase.addToBasket({ id, count, options })
+    // возвращаем в ответе добавленный продукт в корзину
+    response.status(200).json(addedProduct)
+  }
+})
 
 
 
@@ -51,23 +55,7 @@ app.get('/api/basket/', (request, response) => {
   response.status(200).json(DataBase.getBasket())
 })
 
-// добавляем продукт в корзину
-app.post('/api/basket/', (request, response) => {
-  //  вычленяем из запроса id и count
-  const { id, count } = request.body
 
-  // валидируем запрос, если id или count не передавали, то возвращаем ошибку с ее описанием
-  if (!id) {
-    response.status(400).send('Не указан обязательный параметр id')
-  } else if (!count) {
-    response.status(400).send('Не указан обязательный параметр count')
-  } else {
-    // добавляем в корзину продукт, в ответе вернется добавленный продукт
-    const addedProduct = DataBase.addToBasket({ id, count })
-    // возвращаем в ответе добавленный продукт в корзину
-    response.status(200).json(addedProduct)
-  }
-})
 
 // запрашиваем список категорий
 app.get('/api/categories/', (request, response) => {

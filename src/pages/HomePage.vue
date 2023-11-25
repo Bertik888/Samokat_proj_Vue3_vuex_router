@@ -111,9 +111,7 @@
 
   <div class="container mt-5 mb-5">
     <questions-block />
-
   </div>
-
 </template>
 
 <script>
@@ -127,9 +125,6 @@ import PopularCategories from '@/components/PopularCategories.vue'
 import ProfitBlock from '@/components/ProfitBlock.vue'
 import Subscribe from '@/components/Subscribe.vue'
 import QuestionsBlock from '@/components/QuestionsBlock.vue'
-
-
-
 
   export default {
     name: 'HomePage',

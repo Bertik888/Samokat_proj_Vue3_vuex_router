@@ -8,12 +8,12 @@ class DataBase {
         is_top: true,
         name: 'Kugoo Kirin M4',
         article: '2200000000026',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 10,
+        buy_count: 8,
         sale: 10,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -36,8 +36,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -58,13 +58,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -154,14 +154,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: true,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M3',
         article: '2200000000027',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 8,
+        buy_count: 3,
         sale: 15,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -184,8 +184,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -206,13 +206,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -302,14 +302,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: false,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M2',
         article: '2200000000028',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 11,
+        buy_count: 5,
         sale: 5,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -332,8 +332,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -354,13 +354,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -450,14 +450,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: true,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M1',
         article: '2200000000029',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 20,
+        buy_count: 10,
         sale: 10,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -480,8 +480,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -502,13 +502,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -598,14 +598,14 @@ class DataBase {
         cat_id: 1,
         is_new: true,
         is_top: true,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M7',
         article: '2200000000030',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 23,
+        buy_count: 15,
         sale: 13,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -628,8 +628,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -650,13 +650,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -746,14 +746,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: false,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M8',
         article: '2200000000031',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 30,
+        buy_count: 20,
         sale: 30,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -776,8 +776,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -798,13 +798,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -894,14 +894,14 @@ class DataBase {
         cat_id: 1,
         is_new: true,
         is_top: false,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M10',
         article: '2200000000032',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 10,
+        buy_count: 8,
         sale: 15,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -924,8 +924,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -946,13 +946,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -1042,14 +1042,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: true,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M11',
         article: '2200000000033',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 10,
+        buy_count: 6,
         sale: 5,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -1072,8 +1072,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -1094,13 +1094,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -1190,14 +1190,14 @@ class DataBase {
         cat_id: 1,
         is_new: true,
         is_top: false,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M12',
         article: '2200000000034',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 40,
+        buy_count: 20,
         sale: 25,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -1220,8 +1220,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -1242,13 +1242,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -1338,14 +1338,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: true,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M13',
         article: '2200000000035',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 60,
+        buy_count: 10,
         sale: 10,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -1368,8 +1368,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -1390,13 +1390,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -1486,14 +1486,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: false,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M14',
         article: '2200000000036',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 50,
+        buy_count: 35,
         sale: 10,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -1516,8 +1516,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -1538,13 +1538,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -1634,14 +1634,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: true,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M15',
         article: '2200000000037',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 33,
+        buy_count: 22,
         sale: 15,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -1664,8 +1664,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -1686,13 +1686,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -1782,14 +1782,14 @@ class DataBase {
         cat_id: 1,
         is_new: true,
         is_top: true,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M5',
         article: '2200000000038',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 80,
+        buy_count: 7,
         sale: 20,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -1812,8 +1812,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -1834,13 +1834,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -1930,14 +1930,14 @@ class DataBase {
         cat_id: 1,
         is_new: false,
         is_top: true,
-        name: 'Kugoo Kirin M4',
+        name: 'Kugoo Kirin M16',
         article: '2200000000039',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 90,
+        buy_count: 5,
         sale: 10,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -1960,8 +1960,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -1982,13 +1982,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -2080,12 +2080,12 @@ class DataBase {
         is_top: false,
         name: 'Kugoo Kirin M4',
         article: '2200000000040',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 100,
+        buy_count: 88,
         sale: 10,
         price: 39900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -2108,8 +2108,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -2130,13 +2130,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -2228,12 +2228,12 @@ class DataBase {
         is_top: true,
         name: 'Kugoo Kirin M4',
         article: '2200000000041',
-        views_count: 0,
-        buy_count: 0,
+        views_count: 110,
+        buy_count: 70,
         sale: 20,
         price: 59900,
-        image: '1_0.jpeg',
-        images: ['1_1.jpeg', '1_2.jpeg', '1_3.jpeg'],
+        image: 'banner_13.png',
+        images: ['banner_14.png', 'banner_15.png', 'banner_16.png', 'banner_17.png', 'banner_18.png'],
         equipped: [
           {
             type: 'base',
@@ -2256,8 +2256,8 @@ class DataBase {
         ],
         guarantee: [
           {
-            type: 'Стандартная 1 год',
-            name: 'Базовая',
+            type: 'base',
+            name: 'Стандартная 1 год',
             price: 0
           },
           {
@@ -2278,13 +2278,13 @@ class DataBase {
             price: 1520
           },
           {
-            type: 'Гидроизоляция',
-            name: 'waterproofing',
+            type: 'waterproofing',
+            name: 'Гидроизоляция',
             price: 3850
           },
           {
-            type: 'Гидроизоляция и настройка',
-            name: 'waterproofing_and_setting',
+            type: 'waterproofing_and_setting',
+            name: 'Гидроизоляция и настройка',
             price: 4500
           }
         ],
@@ -2371,13 +2371,8 @@ class DataBase {
       }   
     ]
 
-    //Загатовка    
-
-
     this.categories = []
-
     this.basket = []
-
     this.favorites = []
   }
 
@@ -2412,7 +2407,7 @@ class DataBase {
     }
 
     // Добавление в корзину
-    addToBasket({ id, count }) {
+    addToBasket({ id, count, options }) {
       // смотрим присутствует ли уже в корзине данный товар
       const haveProductInBasket = this.getProductInBasketById(id)
       // если присутствует, добавляем count
@@ -2424,6 +2419,7 @@ class DataBase {
       } else {
           // иначе ищем товар среди имеющегося, добавляем поле count и пушим в корзину
           const product = this.getProductById(id)
+          product.options = options
           product.count = count
           this.basket.push(product)
 

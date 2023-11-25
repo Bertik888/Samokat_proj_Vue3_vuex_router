@@ -38,6 +38,8 @@
       class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
       <card-product 
         :item="item"
+        @buy="addToCart"
+        @preOrder="preOrder"
       />
     </div>
 
@@ -102,6 +104,12 @@ import { mapGetters } from 'vuex'
         } else {
           this.filter = name
         }        
+      },
+      addToCart(id) {
+        console.log('addToCart', id)
+      },
+      preOrder(id) {
+        console.log('preOrder', id)
       }
     }
   }

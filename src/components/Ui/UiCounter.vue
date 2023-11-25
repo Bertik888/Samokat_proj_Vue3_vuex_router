@@ -37,7 +37,6 @@
 
 <style lang="scss" scoped>
 @import '@/assets/css/variables.scss';
-
 .ui-counter {
   display: inline-flex;
   align-items: center;
@@ -45,8 +44,7 @@
   border-radius: 5px;
   padding: 8px 12px;
   line-height: 22px;
-  color: $black-1;
-  
+  color: $black-1;  
 
   &__button {
     border: none;
@@ -79,5 +77,4 @@
     min-width: 22px;
   }
 }
-
 </style>
